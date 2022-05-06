@@ -63,6 +63,12 @@ return packer.startup(function(use)
   use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
   use "lunarvim/darkplus.nvim"
   use "folke/lsp-colors.nvim"
+  use 'jacoborus/tender.vim'
+  use 'tikhomirov/vim-glsl'
+  use 'christianchiarulli/nvcode-color-schemes.vim'
+  use 'RRethy/nvim-base16'
+  use "rktjmp/lush.nvim"
+  use {"adisen99/apprentice.nvim", requires = {"rktjmp/lush.nvim"}}
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -100,35 +106,12 @@ return packer.startup(function(use)
 
   -- Debugging
   use "mfussenegger/nvim-dap"
-
   use "rcarriga/nvim-dap-ui"
   use "nvim-telescope/telescope-dap.nvim"
   use "theHamsta/nvim-dap-virtual-text"
 
   use 'iamcco/markdown-preview.nvim'
-
   use 'wilt00/vim-y86-syntax'
-  use 'sainnhe/everforest'
-  use 'mangeshrex/uwu.vim'
-  use 'jacoborus/tender.vim'
-  use 'ray-x/aurora'
-  use 'tikhomirov/vim-glsl'
-  use 'ishan9299/modus-theme-vim'
-  use 'kuznetsss/meadow-nvim'
-  use 'shaunsingh/seoul256.nvim'
-  use 'christianchiarulli/nvcode-color-schemes.vim'
-  use 'RRethy/nvim-base16'
-  use 'gerardbm/vim-atomic'
-  use "rktjmp/lush.nvim"
-  use {"adisen99/apprentice.nvim", requires = {"rktjmp/lush.nvim"}}
-  use 'mboughaba/i3config.vim'
-  use {
-    "folke/trouble.nvim",
-    requires = "kyazdani42/nvim-web-devicons",
-    config = function()
-    require("trouble").setup {}
-    end
-  }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
