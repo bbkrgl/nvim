@@ -69,6 +69,7 @@ return packer.startup(function(use)
   use 'RRethy/nvim-base16'
   use "rktjmp/lush.nvim"
   use {"adisen99/apprentice.nvim", requires = {"rktjmp/lush.nvim"}}
+  use "aktersnurra/no-clown-fiesta.nvim"
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -112,6 +113,9 @@ return packer.startup(function(use)
 
   use 'iamcco/markdown-preview.nvim'
   use 'wilt00/vim-y86-syntax'
+  use 'frenzyexists/aquarium-vim'
+  use "luk400/vim-jukit"
+  use { 'dccsillag/magma-nvim', run = ':UpdateRemotePlugins' }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
