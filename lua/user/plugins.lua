@@ -71,6 +71,9 @@ return packer.startup(function(use)
   use {"adisen99/apprentice.nvim", requires = {"rktjmp/lush.nvim"}}
   use "aktersnurra/no-clown-fiesta.nvim"
   use "ayu-theme/ayu-vim"
+  use {"katawful/kat.nvim", requires = {"Olical/aniseed"}}
+  use "doki-theme/doki-theme-vim"
+  use "xiyaowong/nvim-transparent"
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
