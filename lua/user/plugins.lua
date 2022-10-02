@@ -74,6 +74,7 @@ return packer.startup(function(use)
   use {"katawful/kat.nvim", requires = {"Olical/aniseed"}}
   use "doki-theme/doki-theme-vim"
   use "xiyaowong/nvim-transparent"
+  use 'B4mbus/oxocarbon-lua.nvim'
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
