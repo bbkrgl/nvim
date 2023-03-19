@@ -71,10 +71,13 @@ return packer.startup(function(use)
   use {"adisen99/apprentice.nvim", requires = {"rktjmp/lush.nvim"}}
   use "aktersnurra/no-clown-fiesta.nvim"
   use "ayu-theme/ayu-vim"
-  use {"katawful/kat.nvim", requires = {"Olical/aniseed"}}
-  use "doki-theme/doki-theme-vim"
   use "xiyaowong/nvim-transparent"
   use 'B4mbus/oxocarbon-lua.nvim'
+  use 'Yazeed1s/oh-lucy.nvim'
+  use "rebelot/kanagawa.nvim"
+  use "jlanzarotta/colorSchemeExplorer"
+  use "rockerBOO/boo-colorscheme-nvim"
+  use { 'AlphaTechnolog/pywal.nvim', as = 'pywal' }
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -107,9 +110,6 @@ return packer.startup(function(use)
   -- Git
   use "lewis6991/gitsigns.nvim"
 
-  use "github/copilot.vim"
-  use "hrsh7th/cmp-copilot"
-
   -- Debugging
   use "mfussenegger/nvim-dap"
   use "rcarriga/nvim-dap-ui"
@@ -119,6 +119,7 @@ return packer.startup(function(use)
   use 'iamcco/markdown-preview.nvim'
   use 'wilt00/vim-y86-syntax'
   use 'frenzyexists/aquarium-vim'
+  use 'kylelaker/riscv.vim'
   use { 'dccsillag/magma-nvim', run = ':UpdateRemotePlugins' }
 
   -- Automatically set up your configuration after cloning packer.nvim
