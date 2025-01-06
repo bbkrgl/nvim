@@ -20,4 +20,7 @@ require('plugins/nvim-cmp')
 require('plugins/nvim-treesitter')
 require('plugins/alpha-nvim')
 require('plugins/telescope')
+require('plugins/mason')
+require('plugins/none-ls')
+require('plugins/dap')
 

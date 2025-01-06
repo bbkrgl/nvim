@@ -152,12 +152,20 @@ lazy.setup({
         "williamboman/mason.nvim",
         "nvimtools/none-ls.nvim",
       },
-      config = function()
-        require("../plugins/none-ls") -- require your null-ls config here (example below)
-      end,
     },
 
     -- Fuzzy finder
     { 'nvim-telescope/telescope.nvim' },
+
+    -- DAP
+    {
+      "mfussenegger/nvim-dap",
+      dependencies = {
+        "williamboman/mason.nvim",
+        "jay-babu/mason-nvim-dap.nvim",
+        "rcarriga/nvim-dap-ui",
+        "nvim-neotest/nvim-nio",
+      }
+    }
   },
 })
