@@ -159,12 +159,12 @@ lazy.setup({
 
     -- DAP
     {
-      "mfussenegger/nvim-dap",
+      "rcarriga/nvim-dap-ui",
       dependencies = {
+        "mfussenegger/nvim-dap",
+        "nvim-neotest/nvim-nio",
         "williamboman/mason.nvim",
         "jay-babu/mason-nvim-dap.nvim",
-        "rcarriga/nvim-dap-ui",
-        "nvim-neotest/nvim-nio",
       }
     }
   },
