@@ -22,3 +22,6 @@ vim.fn.sign_define("DapBreakpoint", { text = "🟥", texthl = "", linehl = "", n
 vim.fn.sign_define("DapStopped", { text = "⭐️", texthl = "", linehl = "", numhl = "" })
 
 vim.g.dap_virtual_text = true
+
+-- Python DAP launch.json fix
+dap.adapters.debugpy = dap.adapters.python
