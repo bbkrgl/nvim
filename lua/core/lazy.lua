@@ -107,6 +107,11 @@ lazy.setup({
       },
     },
 
+    {
+      'nvim-lualine/lualine.nvim',
+      dependencies = { 'nvim-tree/nvim-web-devicons' }
+    },
+
     -- Treesitter
     { 'nvim-treesitter/nvim-treesitter', build = ':TSUpdate' },
 
@@ -166,6 +171,14 @@ lazy.setup({
         "williamboman/mason.nvim",
         "jay-babu/mason-nvim-dap.nvim",
       }
-    }
+    },
+
+    -- Wrapping
+    {
+      "andrewferrier/wrapping.nvim",
+      config = function()
+        require("wrapping").setup()
+      end
+    },
   },
 })
