@@ -126,13 +126,13 @@ local servers = { 'bashls', 'pyright', 'clangd', 'html', 'cssls', 'ts_ls' }
 
 -- Call setup
 for _, lsp in ipairs(servers) do
-  lspconfig[lsp].setup {
-    on_attach = on_attach,
-    root_dir = root_dir,
-    capabilities = capabilities,
+  vim.lsp.config(lsp, {
+    -- on_attach = on_attach,
+    -- root_dir = root_dir,
+    -- capabilities = capabilities,    -- default in neovim 0.7+
     flags = {
-      -- default in neovim 0.7+
       debounce_text_changes = 150,
-    }
-  }
+    },
+  })
 end
+vim.lsp.enable(servers)

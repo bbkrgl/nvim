@@ -1,0 +1,1 @@
+/home/brk/.config/omarchy/current/theme/neovim.lua

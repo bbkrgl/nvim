@@ -107,7 +107,7 @@ lazy.setup({
     },
 
     -- Treesitter
-    { 'nvim-treesitter/nvim-treesitter', build = ':TSUpdate' },
+    { 'nvim-treesitter/nvim-treesitter', build = ':TSUpdate', lazy = false },
 
     -- Indent line
     { 'lukas-reineke/indent-blankline.nvim', main = 'ibl', opts = {} },
